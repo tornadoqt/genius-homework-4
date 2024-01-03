@@ -1,0 +1,46 @@
+.find-us-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+
+.map {
+  border-radius: 32px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 423px;
+  background-color: var(--primary-color-dark);
+  border-radius: 32px;
+}
+
+.contact-container {
+  padding: 48px 56px;
+  text-align: center;
+  height: 481px;
+}
+
+.gift-title {
+  color: var(--primary-color-white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  line-height: 1.1;
+  margin-bottom: 32px;
+}
+
+.gift-title .accent {
+  color: var(--primary-color-light);
+}
+
+.form-field.form-field-contact {
+  margin-bottom: 16px;
+}
+
+.policy {
+  color: var(--secondary-color-lightgrey);
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+}

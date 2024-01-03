@@ -1,0 +1,50 @@
+/* play-regular - latin */
+@import './utils/fonts';
+
+@import './utils/variables';
+
+/* base */
+@import './base';
+
+@import './utils/utils';
+
+section {
+  padding: 48px;
+}
+
+@import './layouts/container';
+
+/* Button */
+@import './components/buttons';
+
+/* head section */
+@import './layouts/header';
+
+@import './components/links';
+
+/* hero section */
+@import './layouts/hero-section';
+
+/* offer section */
+@import './layouts/_offer-section';
+
+/* why us section */
+@import './layouts/why-us-section';
+
+/* our procedures */
+@import './layouts/our-procedures';
+
+/* carousel */
+@import './components/carousel-button';
+
+/* find us section */
+@import './layouts/find-us-section';
+
+/* footer */
+@import './layouts/footer-sectin';
+
+/* modal */
+@import './layouts/modal';
+
+/* form */
+@import './layouts/form-terms';

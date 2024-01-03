@@ -1,0 +1,40 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff40;
+  /* padding: 32px; */
+}
+
+/*.head-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}*/
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 240px;
+  justify-content: space-between;
+  height: 106px;
+}
+
+.header-menu {
+  display: flex;
+  gap: 56px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 0;
+}
+
+.social-list {
+  display: flex;
+  gap: 32px;
+}
+
+.social-icon-header {
+  fill: var(--primary-color-dark);
+}

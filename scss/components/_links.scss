@@ -1,0 +1,15 @@
+.link {
+  color: var(--primary-color-dark);
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin: 0 auto;
+  transition: 0.2s;
+}
+
+.link:hover:not(p) {
+  color: var(--primary-color-light);
+}
+
+.link .accent {
+  color: var(--primary-color-light);
+}

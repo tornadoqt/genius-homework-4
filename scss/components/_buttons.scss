@@ -1,0 +1,22 @@
+.button {
+  padding: 16px 32px;
+  color: var(--primary-color-white);
+  background-color: var(--primary-color-light);
+  border: 2px solid var(--primary-color-light);
+  border-radius: 28px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  margin-bottom: 14px;
+}
+
+.button:hover {
+  color: var(--primary-color-dark);
+  background-color: transparent;
+  transition: 0.2s;
+}
+
+.button-signature {
+  width: 238px;
+}

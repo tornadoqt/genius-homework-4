@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  color: var(--primary-color-dark);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+}
+
+ul .accent {
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+address {
+  font-style: normal;
+}

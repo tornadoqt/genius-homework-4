@@ -1,0 +1,79 @@
+.procedures-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.our-procedures-list {
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 16px;
+  /* position: relative; 
+  line-height: 0;  */
+  /* два последних с градиента */
+}
+
+.procedures-item {
+  transition: transform 0.2s;
+}
+
+.procedures-item:hover {
+  transform: scale(1.05);
+}
+
+.procedures-gradient {
+  position: relative;
+  height: 456px;
+  width: 344px;
+  border-radius: 4px 120px 4px 120px;
+  /* display: inline-block; */
+  /* line-height: 0; */
+}
+
+.procedures-gradient.first {
+  background-image: url('../images/our-procedures1.jpg');
+}
+
+.procedures-gradient.second {
+  background-image: url('../images/our-procedures2.jpg');
+}
+
+.procedures-gradient.third {
+  background-image: url('../images/our-procedures3.jpg');
+}
+
+.procedures-gradient:after {
+  display: flex;
+  content: '';
+  /* display: block; */
+  width: 100%; /* возможно убрать */
+  height: 100%;
+  position: static;
+  top: 0;
+  left: 0;
+  background: transparent;
+  background: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    #011c44 101.39%
+  );
+  border-radius: 4px 120px 4px 120px;
+}
+
+.card-sign {
+  height: 456px;
+  width: 344px;
+  margin: 0 0;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0 32px 0;
+  font-size: 22px;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: var(--primary-color-white);
+}
