@@ -4,33 +4,33 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-}
 
-.hero-container {
-  padding: 20px;
-  /* background-image: url('../images/head-background-img.jpg');
+  &__container {
+    padding: 20px;
+    /* background-image: url('../images/head-background-img.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover; */
-}
+  }
 
-.hero-title {
-  color: var(--primary-color-light);
-  font-family: 'Play', sans-serif;
-  font-size: 140px;
-  line-height: 0.8;
-  margin: 16px 0 40px 0;
-}
+  &__logo {
+    margin-bottom: 105px;
+  }
 
-.logo-container {
-  margin-bottom: 105px;
-}
+  &__title {
+    color: var(--primary-color-light);
+    font-family: 'Play', sans-serif;
+    font-size: 140px;
+    line-height: 0.8;
+    margin: 16px 0 40px 0;
+  }
 
-.signature {
-  color: var(--secondary-color-darkgrey);
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-  margin: 4 auto;
-  text-align: center;
+  &__signature {
+    color: var(--secondary-color-darkgrey);
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 4 auto;
+    text-align: center;
+  }
 }

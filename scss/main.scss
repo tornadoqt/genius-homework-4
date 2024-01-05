@@ -1,50 +1,29 @@
-/* play-regular - latin */
-@import './utils/fonts';
-
-@import './utils/variables';
-
-/* base */
-@import './base';
-
-@import './utils/utils';
-
-section {
-  padding: 48px;
-}
-
-@import './layouts/container';
-
-/* Button */
 @import './components/buttons';
-
-/* head section */
-@import './layouts/header';
-
+@import './components/carousel-button';
+@import './components/inputs';
 @import './components/links';
+@import './components/our-procedures-card';
+@import './components/why-us-card';
 
-/* hero section */
+@import './layouts/about-section';
+@import './layouts/container';
+@import './layouts/find-us-section';
+@import './layouts/footer-section';
+@import './layouts/form-terms';
+@import './layouts/header';
 @import './layouts/hero-section';
-
-/* offer section */
-@import './layouts/_offer-section';
-
-/* why us section */
+@import './layouts/mobile-menu';
+@import './layouts/modal';
+@import './layouts/our-procedures';
+@import './layouts/policy';
+@import './layouts/section';
 @import './layouts/why-us-section';
 
-/* our procedures */
-@import './layouts/our-procedures';
+@import './utils/fonts';
+@import './utils/texts';
+@import './utils/utils';
+@import './utils/variables';
 
-/* carousel */
-@import './components/carousel-button';
+@import './base';
 
-/* find us section */
-@import './layouts/find-us-section';
-
-/* footer */
-@import './layouts/footer-sectin';
-
-/* modal */
-@import './layouts/modal';
-
-/* form */
-@import './layouts/form-terms';
+/* play-regular - latin */

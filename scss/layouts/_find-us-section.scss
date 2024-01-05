@@ -1,46 +1,58 @@
-.find-us-container {
-  display: flex;
-  justify-content: center;
-  gap: 32px;
+.contact-section {
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  &__map {
+    border-radius: 32px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 423px;
+    background-image: url('../images/footer-background.png');
+    background-color: var(--primary-color-dark);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    border-radius: 32px;
+    padding: 48px 56px;
+    text-align: center;
+    height: 481px;
+  }
+
+  &__title {
+    color: var(--primary-color-white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    line-height: 1.1;
+    margin-bottom: 32px;
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+  }
 }
 
-.map {
-  border-radius: 32px;
-}
+// хуйня, был лишний контейнер для заголовка и формы
+// &__container {
+//   padding: 48px 56px;
+//   text-align: center;
+//   height: 481px;
+// }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 423px;
-  background-color: var(--primary-color-dark);
-  border-radius: 32px;
-}
+// .gift-title .accent {
+//   color: var(--primary-color-light);
+// }
 
-.contact-container {
-  padding: 48px 56px;
-  text-align: center;
-  height: 481px;
-}
+// .form-field {
+//   position: relative;
+//   margin-bottom: 24px;
+// }
 
-.gift-title {
-  color: var(--primary-color-white);
-  font-family: 'Roboto', sans-serif;
-  font-size: 22px;
-  line-height: 1.1;
-  margin-bottom: 32px;
-}
-
-.gift-title .accent {
-  color: var(--primary-color-light);
-}
-
-.form-field.form-field-contact {
-  margin-bottom: 16px;
-}
-
-.policy {
-  color: var(--secondary-color-lightgrey);
-  font-family: 'Roboto', sans-serif;
-  font-size: 12px;
-  line-height: 1.5;
-}
+// .form-field.form-field-contact {
+//   margin-bottom: 16px;
+// }
