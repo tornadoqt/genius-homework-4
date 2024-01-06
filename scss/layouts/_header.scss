@@ -15,14 +15,23 @@
   &__nav {
     display: flex;
     align-items: center;
-    gap: 240px;
+
     justify-content: space-between;
     height: 106px;
     flex-grow: 1;
+
+    @media screen and (min-width: 1280px) {
+      gap: 240px;
+    }
   }
 
   &__menu {
     display: none;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      gap: 34px;
+    }
 
     @media screen and (min-width: 1280px) {
       display: flex;
@@ -37,7 +46,7 @@
   &__social-list {
     display: none;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
       display: flex;
       gap: 32px;
     }
@@ -55,12 +64,23 @@
     border: none;
     fill: var(--primary-color-light);
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
 }
 
+.desktop-title {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+
+.mobile-title {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
 /*&__container {
   display: flex;
   align-items: center;
