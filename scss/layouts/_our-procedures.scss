@@ -1,25 +1,45 @@
 .our-procedures-section {
-  &__container {
+  &__slider {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 32px;
+    justify-content: center; //в пекарне нету
+  }
+
+  &__container {
+    overflow: hidden;
   }
 
   &__list {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+    margin-bottom: 16px;
+    // display: flex; //в пекарне нету
+    // justify-content: center; //в пекарне нету
+    // gap: 16px; //в пекарне нету
+
     /* flex-wrap: wrap; */
     /* position: relative; */
     /* line-height: 0;  */
     /* два последних с градиента */
-  }
-  &__item {
-    transition: transform 0.2s;
 
-    &:hover {
-      transform: scale(1.05);
+    @media screen and (min-width: 1280px) {
+      //в пекарне нету
+      margin-bottom: 32px;
     }
   }
+
+  &__button {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: flex;
+    }
+  }
+
+  // &__item {
+  // transition: transform 0.2s;
+
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
+  // }
 }

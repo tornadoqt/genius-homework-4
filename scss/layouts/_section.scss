@@ -1,6 +1,12 @@
 .section {
   padding: 48px;
 
+  &:last-child {
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
   &__title {
     color: var(--primary-color-dark);
     font-family: 'Play', sans-serif;

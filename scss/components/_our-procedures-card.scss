@@ -1,10 +1,18 @@
 .procedures-card {
   position: relative;
+  // justify-content: center;
+  display: flex; //с пекарни
+  flex-direction: column; //с пекарни
+  // justify-content: flex-end; //с пекарни
+  // padding: 24px; //с пекарни, не нужно ломает градиент
   height: 456px;
-  width: 344px;
+  // width: 344px; //в пекарне нету
   border-radius: 4px 120px 4px 120px;
+  overflow: hidden; //с пекарни
   /* display: inline-block; */
   /* line-height: 0; */
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &.first {
     background-image: url('../images/our-procedures1.jpg');
@@ -18,11 +26,24 @@
     background-image: url('../images/our-procedures3.jpg');
   }
 
+  &.four {
+    background-image: url('../images/our-procedures1.jpg');
+  }
+
+  &.five {
+    background-image: url('../images/our-procedures2.jpg');
+  }
+
+  &.six {
+    background-image: url('../images/our-procedures3.jpg');
+  }
+
   &:after {
     display: flex;
     content: '';
     /* display: block; */
-    width: 100%; /* возможно убрать */
+    width: 100%;
+    /* возможно убрать */
     height: 100%;
     position: static;
     top: 0;
@@ -36,18 +57,33 @@
     );
     border-radius: 4px 120px 4px 120px;
   }
+
   &__sign {
     height: 456px;
-    width: 344px;
+    // width: 344px;
+    width: 100%;
     margin: 0 0;
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: flex-end;
+    // justify-content: space-around; //было раньше
+    // align-items: flex-end; //было раньше
     padding: 0 0 32px 0;
     font-size: 22px;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
     color: var(--primary-color-white);
+
+    @media screen and (min-width: 768px) {
+      justify-content: space-around;
+      align-items: flex-end;
+      width: 344px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      justify-content: space-around;
+      align-items: flex-end;
+    }
   }
 }

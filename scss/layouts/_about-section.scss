@@ -159,6 +159,20 @@
       //   angle: 22.91 deg;
     }
   }
+
+  &__star-icon-four {
+    // display: none;
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 860px;
+    left: 403px;
+
+    @media screen and (min-width: 530px) {
+      display: none;
+    }
+  }
 }
 
 //about-container__subhero-title

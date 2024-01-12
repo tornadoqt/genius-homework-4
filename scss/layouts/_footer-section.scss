@@ -1,6 +1,5 @@
 .footer {
-  margin-top: 48px;
-  padding: 32px 0;
+  padding: 32px 0 56px 0;
   position: relative;
   background-image: url('../images/footer-background.png');
   background-color: var(--primary-color-dark);
@@ -8,10 +7,33 @@
   background-size: cover;
   background-position: center;
 
+  @media screen and (min-width: 768px) {
+    padding: 56px 0;
+    margin-top: 48px;
+  }
+
   &__container {
     display: flex;
     gap: 20px;
     margin: 0 auto;
+    flex-direction: column; //только добавил
+    align-items: center; //только добавил
+    text-align: center; //только добавил
+
+    @media screen and (min-width: 1280px) {
+      flex-direction: row; //только добавил
+      justify-content: flex-start; //только добавил
+      align-items: normal; //только добавил
+      text-align: left; //только добавил
+    }
+  }
+
+  &__logo {
+    margin-bottom: 22px;
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 0; //только добавил
+    }
   }
 
   &__nav,
@@ -19,6 +41,11 @@
     display: flex;
     flex-basis: 50%;
     gap: 20px;
+    flex-direction: column; //только добавил
+
+    @media screen and (min-width: 1280px) {
+      flex-direction: row; //только добавил
+    }
   }
 
   &__address-list,
@@ -31,12 +58,14 @@
     flex-grow: 1;
   }
 
-  // &__logo,
-  // &__menu {
+  // &__address-info {  //удалить
   //   display: flex;
-  //   flex-direction: column;
-  //   flex-grow: 1;
+  //   flex-direction: column-reverse;
   //   gap: 16px;
+  //   flex-grow: 1;
+  //   @media screen and (min-width: 1280px) {
+  //     flex-direction: column;
+  //   }
   // }
 
   &__link {
@@ -45,11 +74,33 @@
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 1.5;
+
+    &:hover:not(p) {
+      color: var(--primary-color-light);
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: flex; //только добавил
+    }
+
+    &--hidden {
+      display: none; //только добавил
+
+      @media screen and (min-width: 1280px) {
+        display: flex; //только добавил
+      }
+    }
   }
 
   &__social-list {
     display: flex;
+    justify-content: center; //только добавил
     gap: 24px;
+    margin-bottom: -8px;
+
+    @media screen and (min-width: 1280px) {
+      justify-content: left; //только добавил
+    }
   }
 
   &__social-icon {
@@ -75,4 +126,40 @@
   right: 0;
   background-size: 180px 120px;
   content: '';
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
+
+.desktop-policy {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+}
+
+.mobile-policy {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+// &__logo,
+// &__menu {
+//   display: flex;
+//   flex-direction: column;
+//   flex-grow: 1;
+//   gap: 16px;
+// }
+
+//черновик
+// &__address-list {
+//   @media screen and (max-width: 768px) {
+//     position: absolute;
+//     left: -10000px;
+//     top: auto;
+//     width: 1px;
+//     height: 1px;
+//     overflow: hidden;
+//   }
+//  }

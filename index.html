@@ -13,6 +13,7 @@
     /> -->
     <!-- styles -->
     <link rel="stylesheet" href="./scss/main.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
   <body>
     <header class="header">
@@ -62,7 +63,47 @@
             </svg>
           </button>
           <div class="mobile-menu">
-            <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg class="button-icon-close" width="16" height="16">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <a href="#">
+              <img class="mobile-menu__logo" src="./images/logo.svg" alt="Логотип Beauty zone" />
+            </a>
+            <ul class="mobile-menu__menu">
+              <li>
+                <a class="link" href="#about-us-section">Про нас</a>
+              </li>
+              <li><a class="link" href="#why-us-section">Чому ми</a></li>
+              <li>
+                <a class="link" href="#our-procedures-section">Наші процедури</a>
+              </li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+            <ul class="mobile-menu__social-list">
+              <li>
+                <a href="#">
+                  <svg class="header__social-icon-header" width="32" height="32">
+                    <use href="./images/icons.svg#icon-telephone"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__social-icon-header" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="header__social-icon-header" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -122,6 +163,7 @@
             <img class="about-container__star-icon-first" src="./images/star-1.svg" alt="" />
             <img class="about-container__star-icon-second" src="./images/star-2.svg" alt="" />
             <img class="about-container__star-icon-third" src="./images/star-3.svg" alt="" />
+            <img class="about-container__star-icon-four" src="./images/star-1.svg" alt="" />
           </div>
         </div>
       </section>
@@ -163,42 +205,66 @@
           </div>
         </div>
       </section>
-      <!--  <section class="our-procedures-section section" id="our-procedures-section">
+      <section class="our-procedures-section section" id="our-procedures-section">
         <div class="container">
           <h2 class="section__title section__title--centered">
             Нaші <span class="text-brand">процедури</span>
           </h2>
-          <div class="our-procedures-section__container">
-            <button class="our-procedures-section_button carousel-button prev" type="button">
+          <div class="our-procedures-section__slider">
+            <button class="our-procedures-section__button carousel-button prev" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
-            <ul class="our-procedures-section__list">
-              <li class="our-procedures-section__item">
-                <article class="procedures-card first">
-                  <p class="procedures-card__sign">Маски для обличчя</p>
-                </article>
-              </li>
-              <li class="our-procedures-section__item">
-                <article class="procedures-card second">
-                  <p class="procedures-card__sign">Ін'єкції для обличчя</p>
-                </article>
-              </li>
-              <li class="our-procedures-section__item">
-                <article class="procedures-card third">
-                  <p class="procedures-card__sign">Очищення обличчя</p>
-                </article>
-              </li>
-            </ul>
-            <button class="our-procedures-section_button carousel-button next" type="button">
+            <div class="our-procedures-section__container swiper-container">
+              <ul class="our-procedures-section__list swiper-wrapper">
+                <li class="swiper-slide our-procedures-section__item">
+                  <article class="procedures-card first">
+                    <p class="procedures-card__sign">Маски для обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide our-procedures-section__item">
+                  <article class="procedures-card second">
+                    <p class="procedures-card__sign">Ін'єкції для обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide our-procedures-section__item">
+                  <article class="procedures-card third">
+                    <p class="procedures-card__sign">Очищення обличчя</p>
+                  </article>
+                </li>
+
+                <li class="swiper-slide our-procedures-section__item">
+                  <article class="procedures-card four">
+                    <p class="procedures-card__sign">Маски для обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide our-procedures-section__item">
+                  <article class="procedures-card five">
+                    <p class="procedures-card__sign">Ін'єкції для обличчя</p>
+                  </article>
+                </li>
+                <li class="swiper-slide our-procedures-section__item">
+                  <article class="procedures-card six">
+                    <p class="procedures-card__sign">Очищення обличчя</p>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+                <span class="pagination__button"></span>
+              </div>
+            </div>
+            <button class="our-procedures-section__button carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
             </button>
           </div>
         </div>
-      </section>-->
+      </section>
       <section class="contact-section section" id="contact-section">
         <div class="container">
           <h2 class="section__title section__title--centered">
@@ -273,7 +339,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__container">
           <nav class="footer__nav">
@@ -290,36 +356,64 @@
                 <a class="footer__link" href="#our-procedures-section">Наші процедури</a>
               </li>
               <li><a class="footer__link" href="#">Контакти</a></li>
-            </ul>
-
-          </nav>
-          <address class="footer__address">
-            <ul class="footer__address-list">
-              <li><a class="footer__link" href="#">+ 38 (096) 000 00 07</a></li>
-              <li><a class="footer__link" href="#">beautyzone@gmail.com</a></li>
-              <li>
-                <a class="footer__link" href="#"
-                  >Україна, м. Київ, <br />
-                  вул. Тараса Шевченка 5</a
-                >
-              </li>
-              <div class="footer__social-list">
+              <li><a class="footer__link mobile-policy" href="#">Політика конфіденційності</a></li>
+              <div class="footer__social-list mobile-policy">
                 <li>
-                  <a href="#">
+                  <a class="mobile-policy" href="#">
                     <svg class="footer__social-icon" width="42" height="42">
                       <use href="./images/icons.svg#icon-telephone"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="mobile-policy" href="#">
                     <svg class="footer__social-icon" width="42" height="42">
                       <use href="./images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a class="mobile-policy" href="#">
+                    <svg class="footer__social-icon" width="42" height="42">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </div>
+              <p class="footer__safe mobile-policy">&copy; 2022 Дані захищені</p>
+            </ul>
+          </nav>
+          <address class="footer__address desktop-policy">
+            <ul class="footer__address-list">
+              <li>
+                <a class="footer__link footer__link--hidden" href="#">+ 38 (096) 000 00 07</a>
+              </li>
+              <li>
+                <a class="footer__link footer__link--hidden" href="#">beautyzone@gmail.com</a>
+              </li>
+              <li>
+                <a class="footer__link footer__link--hidden" href="#"
+                  >Україна, м. Київ, <br />
+                  вул. Тараса Шевченка 5</a
+                >
+              </li>
+              <div class="footer__social-list">
+                <li>
+                  <a class="desktop-policy" href="#">
+                    <svg class="footer__social-icon" width="42" height="42">
+                      <use href="./images/icons.svg#icon-telephone"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="desktop-policy" href="#">
+                    <svg class="footer__social-icon" width="42" height="42">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="desktop-policy" href="#">
                     <svg class="footer__social-icon" width="42" height="42">
                       <use href="./images/icons.svg#icon-instagram"></use>
                     </svg>
@@ -328,13 +422,13 @@
               </div>
             </ul>
             <div class="footer__address-info">
-              <a class="footer__link" href="#">Політика конфіденційності</a>
-              <p class="footer__safe">&copy; 2022 Дані захищені</p>
+              <a class="footer__link desktop-policy" href="#">Політика конфіденційності</a>
+              <p class="footer__safe desktop-policy">&copy; 2022 Дані захищені</p>
             </div>
           </address>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden">
       <!-- is-hidden -->
       <div class="modal">
@@ -394,6 +488,8 @@
         </form>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/procedures-slider.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
